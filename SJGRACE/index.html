@@ -28,6 +28,26 @@
 <link rel="stylesheet" href="assets/css/animations.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "SJ GRACE MULTISERVICE", "description": "Achat et vente de terrains, location et gestion immobilière, location et vente de véhicules, assurances, matériels de génie civil, études géotechniques, exportation et prestations diverses.", "slogan": "Une équipe, un savoir-faire", "url": "https://www.votre-domaine.ci/", "image": "https://www.votre-domaine.ci/assets/images/og-sjgrace.jpg", "telephone": ["+2250140156178", "+2250748877766", "+2252724537121"], "email": "sjgracemultiservice@gmail.com", "logo": "https://www.votre-domaine.ci/assets/icons/icon-512.png", "employee": {"@type": "Person", "name": "Siméon N'GUESSAN", "jobTitle": "Directeur Général"}, "address": {"@type": "PostalAddress", "streetAddress": "Cocody Angré Château, non loin de SOCOCE", "addressLocality": "Abidjan", "addressCountry": "CI"}, "areaServed": [{"@type": "City", "name": "Abidjan"}, {"@type": "City", "name": "Yamoussoukro"}, {"@type": "City", "name": "Bouaké"}, {"@type": "City", "name": "Daloa"}, {"@type": "City", "name": "San Pedro"}]}</script>
+<style>
+/* Numéros de téléphone de l’accueil (fixe et mobiles) */
+.hero-phones { list-style: none; padding: 0; margin: 1.6rem 0 0; display: flex; flex-wrap: wrap; gap: .7rem; }
+.hero-phones a { display: flex; align-items: center; gap: .65rem; padding: .6rem 1rem .6rem .65rem; border-radius: 14px; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .16); color: #fff; text-decoration: none; font-family: var(--font-title); font-weight: 800; transition: background .25s, transform .25s var(--ease); }
+.hero-phones a:hover, .hero-phones a:focus-visible { background: rgba(255, 255, 255, .16); color: #fff; transform: translateY(-2px); }
+.hero-phones i { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; background: var(--gold); color: var(--navy); }
+.hero-phones small { display: block; font-family: var(--font-body); font-weight: 600; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--gold-light); line-height: 1.2; }
+/* En-tête : les 3 numéros avant « Devis gratuit » */
+.header-phones { display: flex; align-items: center; gap: .6rem; }
+.header-phones > i { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: rgba(255, 255, 255, .1); color: var(--gold-light); flex-shrink: 0; }
+.header-phones ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; line-height: 1.15; }
+.header-phones a { color: #fff; text-decoration: none; font-weight: 700; font-size: .76rem; line-height: 1.15; white-space: nowrap; letter-spacing: .01em; }
+.header-phones a:hover, .header-phones a:focus-visible { color: var(--gold-light); }
+@media (min-width: 992px) and (max-width: 1199.98px) { .header-phones { display: none; } }
+@media (max-width: 991.98px) {
+  .header-phones { width: 100%; align-items: flex-start; }
+  .header-phones ul { gap: .35rem; }
+  .header-phones a { font-size: 1rem; }
+}
+</style>
 </head><body>
 <a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="site-header is-transparent">
@@ -40,8 +60,15 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Ouvrir le menu"><i class="bi bi-list" aria-hidden="true"></i></button>
       <div class="collapse navbar-collapse" id="menuPrincipal">
         <ul class="navbar-nav mx-auto"><li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Accueil</a></li><li class="nav-item"><a class="nav-link" href="pages/a-propos.html">À propos</a></li><li class="nav-item"><a class="nav-link" href="pages/services.html">Nos services</a></li><li class="nav-item"><a class="nav-link" href="pages/galerie.html">Galerie</a></li><li class="nav-item"><a class="nav-link" href="pages/faq.html">FAQ</a></li><li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li></ul>
-        <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
-          <a class="header-phone d-lg-none d-xl-inline-flex" href="tel:+2250140156178"><i class="bi bi-telephone-fill" aria-hidden="true"></i>01&nbsp;40&nbsp;15&nbsp;61&nbsp;78</a>
+        <div class="d-flex flex-wrap align-items-center gap-3 mt-3 mt-lg-0">
+          <div class="header-phones" role="group" aria-label="Nos numéros de téléphone">
+            <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+            <ul>
+              <li><a href="tel:+2250140156178" aria-label="Service client : 01 40 15 61 78">01&nbsp;40&nbsp;15&nbsp;61&nbsp;78</a></li>
+              <li><a href="tel:+2250748877766" aria-label="Mobile : 07 48 87 77 66">07&nbsp;48&nbsp;87&nbsp;77&nbsp;66</a></li>
+              <li><a href="tel:+2252724537121" aria-label="Fixe : 27 24 53 71 21">27&nbsp;24&nbsp;53&nbsp;71&nbsp;21</a></li>
+            </ul>
+          </div>
           <a class="btn btn-gold btn-sm px-3 py-2" href="pages/contact.html">Devis gratuit <span class="emoji" aria-hidden="true">✨</span></a>
         </div>
       </div>
@@ -63,7 +90,11 @@
         <ul class="hero-points">
           <li><i class="bi bi-shield-check" aria-hidden="true"></i>Transactions en toute sécurité</li>
           <li><i class="bi bi-geo-alt" aria-hidden="true"></i>5 villes couvertes</li>
-          <li><i class="bi bi-telephone" aria-hidden="true"></i>Service client : 01&nbsp;40&nbsp;15&nbsp;61&nbsp;78</li>
+        </ul>
+        <ul class="hero-phones">
+          <li><a href="tel:+2250140156178"><i class="bi bi-telephone-fill" aria-hidden="true"></i><span><small>Service&nbsp;client</small>01&nbsp;40&nbsp;15&nbsp;61&nbsp;78</span></a></li>
+          <li><a href="tel:+2250748877766"><i class="bi bi-phone-fill" aria-hidden="true"></i><span><small>Mobile</small>07&nbsp;48&nbsp;87&nbsp;77&nbsp;66</span></a></li>
+          <li><a href="tel:+2252724537121"><i class="bi bi-telephone-fill" aria-hidden="true"></i><span><small>Fixe</small>27&nbsp;24&nbsp;53&nbsp;71&nbsp;21</span></a></li>
         </ul>
       </div>
       <div class="col-lg-6" data-reveal="right">
@@ -269,7 +300,7 @@
           <p class="lead-lg mb-4">Vous avez un projet immobilier, foncier ou de construction ? Parlons-en et étudions ensemble les solutions adaptées.</p>
           <div class="d-flex flex-wrap gap-2">
             <a class="contact-pill" href="tel:+2250140156178"><i class="bi bi-telephone-fill" aria-hidden="true"></i>01&nbsp;40&nbsp;15&nbsp;61&nbsp;78</a>
-            <a class="contact-pill" href="tel:+2250748877766"><i class="bi bi-phone-fill" aria-hidden="true"></i>07&nbsp;48&nbsp;87&nbsp;77&nbsp;66</a>
+            <a class="contact-pill" href="tel:+2250748877766"><i class="bi bi-phone-fill" aria-hidden="true"></i>07&nbsp;48&nbsp;87&nbsp;77&nbsp;66</a><a class="contact-pill" href="tel:+2252724537121"><i class="bi bi-telephone-fill" aria-hidden="true"></i>27&nbsp;24&nbsp;53&nbsp;71&nbsp;21&nbsp;(fixe)</a>
             <a class="contact-pill" href="mailto:sjgracemultiservice@gmail.com"><i class="bi bi-envelope-fill" aria-hidden="true"></i>sjgracemultiservice@gmail.com</a>
             <a class="contact-pill" href="https://www.google.com/maps/search/?api=1&amp;query=Cocody+Angr%C3%A9+Ch%C3%A2teau+Abidjan" rel="noopener" target="_blank"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>Cocody Angré Château</a>
           </div>
