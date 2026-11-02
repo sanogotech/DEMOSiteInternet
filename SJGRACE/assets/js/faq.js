@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SJGRACE — faq.js : recherche locale instantanée dans la FAQ
+   SJ GRACE — faq.js : recherche locale instantanée dans la FAQ
    ========================================================================== */
 'use strict';
 

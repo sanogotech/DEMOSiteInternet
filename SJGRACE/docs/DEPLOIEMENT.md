@@ -1,4 +1,4 @@
-# Guide de déploiement — Site SJGRACE MULTISERVICE
+# Guide de déploiement — Site SJ GRACE MULTISERVICE
 
 Le site est 100 % statique : il suffit de copier le contenu du dossier `site-web/` à la racine d'un hébergement web.
 

@@ -1,14 +1,16 @@
 /* ==========================================================================
-   SJGRACE — main.js : configuration, en-tête, navigation, notifications, partage
+   SJ GRACE — main.js : configuration, en-tête, navigation, notifications, partage
    ========================================================================== */
 'use strict';
 
 /** Configuration centrale : modifier ici les coordonnées utilisées par les scripts. */
 window.SJ = Object.freeze({
-  nom: 'SJGRACE MULTISERVICE',
+  nom: 'SJ GRACE MULTISERVICE',
   whatsapp: '2250140156178',          // numéro au format international, sans "+" ni espace
   telFixe: '+2252724537121',
-  telMobile: '+2250140156178'
+  telMobile: '+2250140156178',       // service client
+  telMobile2: '+2250748877766',
+  email: 'sjgracemultiservice@gmail.com'
 });
 
 document.documentElement.classList.add('js');
@@ -116,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-copy]').forEach(el => {
     el.addEventListener('click', async () => {
       const ok = await copierTexte(el.dataset.copy);
-      notifier(ok ? 'Numéro copié : ' + el.dataset.copy + ' 📞' : 'Copie impossible', ok ? 'bi-telephone-fill' : 'bi-exclamation-circle');
+      notifier(ok ? 'Copié : ' + el.dataset.copy + ' 📋' : 'Copie impossible', ok ? 'bi-clipboard-check' : 'bi-exclamation-circle');
     });
   });
 

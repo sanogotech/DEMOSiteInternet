@@ -1,11 +1,11 @@
 /* ==========================================================================
-   SJGRACE — Responsive (approche mobile first : ajustements par palier)
+   SJ GRACE — Responsive (approche mobile first : ajustements par palier)
    ========================================================================== */
 
 /* < 992px : tablettes et mobiles */
 @media (max-width: 991.98px) {
   :root { --header-h: 70px; }
-  .site-header { background: rgba(15, 31, 61, .97); }
+  .site-header { background: rgba(4, 58, 94, .97); }
   .site-header .navbar-collapse { background: var(--navy); margin: .6rem -.75rem 0; padding: 1rem 1.2rem 1.4rem; border-radius: 0 0 20px 20px; max-height: calc(100vh - var(--header-h)); overflow-y: auto; }
   .site-header .nav-link { padding: .8rem .2rem !important; border-bottom: 1px solid rgba(255, 255, 255, .06); font-size: 1.05rem; }
   .site-header .nav-link::after { display: none; }

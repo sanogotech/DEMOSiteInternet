@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SJGRACE — formulaire.js : validation des formulaires + préparation WhatsApp
+   SJ GRACE — formulaire.js : validation des formulaires + préparation WhatsApp
    --------------------------------------------------------------------------
    Le site étant 100 % frontend, aucun message n'est envoyé à un serveur.
    Après validation, le message est préparé et l'utilisateur l'envoie

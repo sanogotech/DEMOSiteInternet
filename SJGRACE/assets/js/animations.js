@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SJGRACE — animations.js : apparition au défilement et compteurs
+   SJ GRACE — animations.js : apparition au défilement et compteurs
    ========================================================================== */
 'use strict';
 

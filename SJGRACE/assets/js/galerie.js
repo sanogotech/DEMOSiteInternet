@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SJGRACE — galerie.js : filtres dynamiques + visionneuse (lightbox) accessible
+   SJ GRACE — galerie.js : filtres dynamiques + visionneuse (lightbox) accessible
    ========================================================================== */
 'use strict';
 

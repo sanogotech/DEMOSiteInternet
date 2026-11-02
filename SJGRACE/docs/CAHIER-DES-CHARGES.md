@@ -1,9 +1,9 @@
-# Cahier des charges fonctionnel — Site SJGRACE MULTISERVICE
+# Cahier des charges fonctionnel — Site SJ GRACE MULTISERVICE (v2)
 
 ## 1. Contexte
-SJGRACE MULTISERVICE (Cocody Angré Château, Abidjan) accompagne particuliers, propriétaires,
+SJ GRACE MULTISERVICE (Cocody Angré Château, Abidjan) accompagne particuliers, propriétaires,
 investisseurs et entreprises dans leurs projets immobiliers et de construction.
-Source unique des contenus : la plaquette commerciale (10 pages). **Aucune information n'a été inventée.**
+Sources des contenus : plaquette commerciale (10 pages), flyer commercial, carte de visite du DG (Siméon N’GUESSAN) et logo officiel. **Aucune information n'a été inventée.**
 
 ## 2. Objectifs
 | # | Objectif | Indicateur |
@@ -20,13 +20,14 @@ Particuliers 🏠 · Propriétaires 🔑 · Investisseurs 📈 · Entreprises �
 ## 4. Arborescence
 ```
 Accueil
-├── À propos (identité, approche, engagements, clients, valeurs)
+├── À propos (identité, direction générale, approche, engagements, clients, valeurs)
 ├── Nos services
-│   ├── #immobilier     Gestion immobilière
-│   ├── #foncier        Vente de terrains et développement foncier
+│   ├── #foncier        Achat et vente de terrains (5 villes)   ← activité clé
+│   ├── #immobilier     Location de maisons & gestion           ← activité clé
+│   ├── #vehicules      Location (missions, mariages) & vente   ← activité clé
 │   ├── #genie-civil    Matériels et équipements
 │   ├── #geotechnique   Études géotechniques
-│   └── #complementaires Assurances · Véhicules · Prestations diverses
+│   └── #complementaires Assurances · Exportation · Prestations diverses
 ├── Galerie (filtres par domaine)
 ├── FAQ
 ├── Contact
@@ -50,4 +51,4 @@ Responsive mobile first · WCAG 2.2 AA · HTML sémantique · SEO on-page · ima
 sécurité frontend (pas de secret, saisies nettoyées, `textContent`, `rel="noopener"`) · compatibilité navigateurs modernes.
 
 ## 7. Hors périmètre (faute de contenu source)
-Pages Réalisations et Actualités, chiffres d'activité, témoignages clients, horaires d'ouverture, e-mail.
+Pages Réalisations et Actualités, chiffres d'activité, témoignages clients, horaires d'ouverture, détail de l'activité Exportation.
